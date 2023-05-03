@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_options.css">
+  <script src="landingpage.js"></script>
+  <!-- RESIZE PICS -->
+  <style>
+    html, body {
+      height: 100%;
+      margin: 35px 0 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000000; /* replace with your desired background color */
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 70px; /* Adjust the height of the footer as needed */
+      background-color: #282828; /* Set the background color of the footer */
+      display: flex; /* Use flexbox to center the child elements */
+      align-items: center; /* Center child elements vertically */
+      justify-content: center; /* Center child elements horizontally */
+    }
+
+
+
+
+    footer{
+      position: fixed;
+      vertical-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px; /* Adjust the height of the footer as needed */
+      background-color: #282828; /* Set the background color of the footer */
+    }
+  </style>
+</head>
+<header>
+  <div class="button-container">
+    <table>
+      <tr>
+        <td><a href="/about.html" class="myButton"><img src="images/About%20button.png" height="50"/></a></td>
+        <td><a href="/products.html" class="myButton"><img src="images/product%20button.png" height="50"/></a></td>
+        <td><a href="/shopCar.html" onclick="calculateTotalValue()" class="myButton"><img src="images/cart%20button.png" height="50"/></a></td>
+      </tr>
+    </table>
+  </div>
+</header>
+<body>
+<audio controls autoplay hidden>
+  <source src="music/Marusha.mp3" type="audio/mpeg">
+</audio>
+<!-- SPLINE IMAGE -->
+<script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.295/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/nwp797PqP9aRgQea/scene.splinecode"></spline-viewer>
+
+
+</body>
+<footer><center><a href="/landingpage.html"><img src="images/logo.png" height="50px"/></a></center></footer>
+</html>

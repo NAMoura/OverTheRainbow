@@ -1,0 +1,63 @@
+html, body{
+    height: auto ;
+}
+body {
+    background: linear-gradient(to bottom, #F5D7CA, #BAE4E0, #6DE6F3,#C4BFFE ) no-repeat;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; /* Adjust the height of the footer as needed */
+    background-color: #282828; /* Set the background color of the footer */
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px; /* Adjust the height of the footer as needed */
+    background-color: #282828; /* Set the background color of the footer */
+    display: flex; /* Use flexbox to center the child elements */
+    align-items: center; /* Center child elements vertically */
+    justify-content: center; /* Center child elements horizontally */
+}
+
+footer{
+    position: fixed;
+    vertical-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; /* Adjust the height of the footer as needed */
+    background-color: #282828; /* Set the background color of the footer */
+}
+.table-container {
+    /* Set container styles */
+    width: 50%; /* Set container width to 50% of the viewport */
+    margin: 0 auto; /* Center the container horizontally */
+}
+#tabletest {
+    /* Set table styles */
+    border: none;
+    width: 100%; /* Set table width to 100% of the container */
+    border-collapse: collapse; /* Collapse table borders */
+}
+th, td {
+    /* Set styles for table cells */
+    border: none;
+    width: 30%; /* Set width of columns to 30% of table width */
+    padding: 2px; /* Add padding to table cells */
+    vertical-align: center; /* Align text to left in table cells */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+th {
+    /* Set styles for table header cells */
+    background-color: #F2F2F2; /* Set background color of header cells */
+    border:none;
+}

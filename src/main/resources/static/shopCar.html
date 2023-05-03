@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wickedly Delicious</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="generator" content="Bootply"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- jquery form validation plugin -->
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="shopCart.css   " />
+    <script src="shopCar.js"></script>
+</head>
+<header>
+    <div class="button-container">
+        <table>
+            <tr>
+                <td><a href="/about.html" class="myButton"><img src="images/About%20button.png" height="50"/></a></td>
+                <td><a href="/products.html" class="myButton"><img src="images/product%20button.png" height="50"/></a></td>
+                <td><a href="/shopCar.html" onclick="calculateTotalValue()" class="myButton"><img src="images/cart%20button.png" height="50"/></a></td>
+            </tr>
+        </table>
+    </div>
+</header>
+<body>
+
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p><p><br></p>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+
+        <p id="product-data-info" class="info alert" style="visibility:hidden"/>
+
+        <h3 class="text-info">List of Products:</h3>
+        <table id="product-table" class="table table-striped table-bordered">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </table>
+
+        <button type="button" id="clear-btn" class="btn btn-warning">Clear all</button>
+
+
+            <button style="margin-right: 30px;margin: 10px"
+                    id="whatsapp-btn" class="btn btn-success">Submit</button>
+                <span id="total-value">Total Value: €0.00</span>
+
+
+
+    </div>
+</div>
+</body>
+<footer>
+    <center><a href="/landingpage.html"><img src="images/logo.png" height="50px"/></a></center>
+</footer>
+</html>

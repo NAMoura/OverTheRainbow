@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Wickedly Delicious</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="generator" content="Bootply"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- jquery form validation plugin -->
+  <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="products.css" />
+  <script src="shopCar.js"></script>
+</head>
+<header>
+  <div class="button-container">
+    <table>
+      <tr>
+        <td><a href="/about.html" class="myButton"><img src="images/About%20button.png" height="50"/></a></td>
+        <td><a href="/products.html" class="myButton"><img src="images/product%20button.png" height="50"/></a></td>
+        <td><a href="/shopCar.html" onclick="calculateTotalValue()" class="myButton"><img src="images/cart%20button.png" height="50"/></a></td>
+      </tr>
+    </table>
+  </div>
+</header>
+<body>
+<div class="table-container">
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <table id="tabletest">
+    <tbody>
+    <tr>
+      <td rowspan="3"><center><img src="images/blueskies.png" width="200px"/></center></td>
+      <td style="background:linear-gradient(to bottom, #a5d9d9 5%, #F8FCFE 100%)"><h3> Blueskies</h3></td>
+    </tr>
+    <tr>
+      <td><p>Introducing Blueskies, the perfect blend of energizing and anxiety-inducing ingredients.
+        One minute you'll be feeling pumped and ready to take on the world, the next minute you'll be
+        giggling uncontrollably and questioning your own sanity. But don't worry, our unique formula is
+        designed to keep you on your toes, leaving you feeling both excited and confused. And for those
+        times when the overwhelming feeling sets in, just sit back and enjoy the ride with Blueskies.
+        Try it today and embrace the unpredictable journey!</p></td>
+    </tr>
+    <tr>
+      <td><center><p><b>Price: 45€</b></p><button type="button" id="add-btn1" class="btn btn-success" data-productname="Blueskies" data-price="45">Add</button></center></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><center><img src="images/Cyclone.png" width="200px"/></center></td>
+      <td style="background:linear-gradient(to bottom, #a5d9d9 5%, #F8FCFE 100%)"><h3>Cyclone</h3></td>
+    </tr>
+    <tr>
+      <td><p>Introducing Cyclone - the natural and delicious way to stay on top of your game! Our unique blend of
+        natural ingredients can help you feel more alert and focused, while promoting mental clarity and sharpness.
+        And let's not forget the euphoric and energizing effects that can make you feel like a social butterfly!
+        Say goodbye to harmful energy supplements and hello to the zesty benefits of Cyclone!</p></td>
+    </tr>
+    <tr>
+      <td><center><p><b>Price: 55€</b></p><button type="button" id="add-btn2" class="btn btn-success" data-productname="Cyclone" data-price="55">Add</button></center></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><center><img src="images/lemonDrops.png" width="200px"/></center></td>
+      <td style="background:linear-gradient(to bottom, #a5d9d9 5%, #F8FCFE 100%)"><h3>LemonDrops</h3></td>
+    </tr>
+    <tr>
+      <td><p>Looking for an all-natural way to get your blood pumping and your heart racing?
+        Look no further than Lemon Drops. the ultimate way to feel euphoric, aroused, and
+        get that head rush you've been craving.
+        But be warned, if you're feeling sick, faint, or experiencing reduced coordination,
+        Lemon Drops might not be for you. We want you to feel great, not green!
+        So make sure you're ready to take on the world before you pop the top on a bottle of
+        Lemon Drops. With great power comes great responsibility, after all!</p></td>
+    </tr>
+    <tr>
+      <td><center><p><b>Price: 50€</b></p><button type="button" id="add-btn3" class="btn btn-success" data-productname="LemonDrops" data-price="50">Add</button></center></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><center><img src="images/lullaby.png" width="200px"/></center></td>
+      <td style="background:linear-gradient(to bottom, #a5d9d9 5%, #F8FCFE 100%)"><h3>Lullaby</h3></td>
+    </tr>
+    <tr>
+      <td><p>Introducing Lullaby, the perfect solution for when you're feeling giggly,
+        excited, and just a tad confused - we've all been there!
+        This unique blend of natural ingredients will have you feeling calm, cool, and
+        collected in no time, even if life is throwing you a curveball.
+        But if you're feeling paranoid, anxious, or overwhelmed, don't worry -
+        Lullaby has got your back too. Our secret formula will help you find your center,
+        no matter what the world throws your way. So why wait? Try Lullaby today and
+        let the good vibes roll!</p></td>
+    </tr>
+    <tr>
+      <td><center><p><b>Price: 40€</b></p><button type="button" id="add-btn4" class="btn btn-success" data-productname="Lullaby" data-price="40">Add</button></center></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><center><img src="images/rainbows.png" width="200px"/></center></td>
+      <td style="background:linear-gradient(to bottom, #a5d9d9 5%, #F8FCFE 100%)"><h3>Rainbows</h3></td>
+    </tr>
+    <tr>
+      <td><p>Introducing RainBow- the perfect escape from the chaos of life.
+        Our all-natural ingredients will leave you feeling stoned in the
+        best way possible - happy, giggly, and relaxed. And don't worry,
+        you won't get too sleepy - just blissfully mellow.
+        So take a Rainbow and give yourself a well-deserved break!</p></td>
+    </tr>
+    <tr>
+      <td><center><p><b>Price: 50€</b></p><button type="button" id="add-btn5" class="btn btn-success" data-productname="Rainbow" data-price="50">Add</button></center></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="3"><center><img src="images/wicked .png" width="200px"/></center></td>
+      <td style="background:linear-gradient(to bottom, #a5d9d9 5%, #F8FCFE 100%)"><h3>Wicked</h3></td>
+    </tr>
+    <tr>
+      <td><p>Introducing  Wicked , the perfect pick-me-up for those times when
+        you need to be alert, energised, and wide-awake! This powerful energy
+        drink will have you feeling like you can take on the world, whether
+        you're facing a busy workday, an intense workout, or a night of
+        partying with friends.
+        But beware, if you're already feeling agitated, panicked, or chatty,
+        maybe give Wicked a miss. We don't want to be responsible
+        for any over-caffeinated mishaps!</p></td>
+    </tr>
+    <tr>
+      <td> <center><p><b>Price: 60€</b></p><button type="button" id="add-btn6" class="btn btn-success" data-productname="Wicked" data-price="60">Add</button></center></td>
+    </tr>
+    </tbody>
+  </table>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+  <p><br></p>
+</div>
+</body>
+<footer>
+  <center><a href="/landingpage.html"><img src="images/logo.png" height="50px"/></a></center>
+</footer>
+</html>
